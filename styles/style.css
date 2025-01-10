@@ -1,17 +1,11 @@
 @media (max-width: 600px) {
+  .header-content {
+      flex-direction: column;
+  }
+
   nav {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-
-@media (max-width: 600px) {
-  nav a {
-    display: none;
-  }
-
-  nav.show a {
-    display: block;
+      flex-direction: column;
+      gap: 10px;
   }
 }
 
@@ -20,76 +14,113 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
+  background-color: #f0f2f5;
+}
+
+header {
+  margin-bottom: 0; /* No gap between sections */
+}
+
+.image {
+  background-color: #002b5c; /* Dark blue background for the image */
+  padding: 20px;
+  text-align: center;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 100px; /* Slightly larger image */
+  height: 100px;
+}
+
+.nav-bar {
+  background-color: #525050; /* Gray background for the navigation */
+  padding: 10px 0; /* Add spacing inside the nav bar */
+  text-align: center;
 }
 
 nav {
-  background: #333;
-  color: #fff;
-  padding: 10px;
   display: flex;
-  gap: 15px;
+  justify-content: center;
+  gap: 20px; /* Space between nav links */
 }
 
 nav a {
-  color: #fff;
+  color: white;
   text-decoration: none;
+  padding: 10px 15px;
+  background-color: transparent; /* Transparent links for now */
+  border-radius: 5px;
 }
 
-nav a:hover {
-  text-decoration: underline;
+nav a:hover, nav a.active {
+  background-color: #69a4e4; /* Light blue hover effect */
+  font-weight: bold;
+}
+
+.image {
+  background-color: #002b5c;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+h1, h2 {
+  text-align: center;
 }
 
 section {
+  margin-bottom: 30px;
   padding: 20px;
-  margin: 20px auto;
-  max-width: 800px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 footer {
+  background-color: #002b5c;
+  color: white;
   text-align: center;
-  padding: 10px;
-  background: #f4f4f4;
-  border-top: 1px solid #ddd;
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 14px;
 }
 
-.completed {
-  background-color: #d4edda;
-  padding: 5px;
-  border: 1px solid #c3e6cb;
-  margin-bottom: 5px;
-}
-
-.incomplete {
-  background-color: #f8d7da;
-  padding: 5px;
-  border: 1px solid #f5c6cb;
-  margin-bottom: 5px;
+footer p {
+  margin: 5px 0;
 }
 
 button {
   margin: 5px;
-  padding: 10px;
-  border: none;
+  padding: 10px 15px;
   background-color: #007bff;
   color: white;
-  cursor: pointer;
+  border: none;
   border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
 }
 
 button:hover {
   background-color: #0056b3;
 }
 
-nav a.active {
-  font-weight: bold;
-  text-decoration: underline;
-  color: yellow;
+#courseList div {
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  font-size: 14px;
 }
 
-button, nav a {
-  transition: background-color 0.3s ease, transform 0.2s ease;
+.completed {
+  background-color: #d4edda;
+  color: #155724;
 }
 
-button:hover {
-  transform: scale(1.05);
+.incomplete {
+  background-color: #f8d7da;
+  color: #721c24;
 }
