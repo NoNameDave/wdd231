@@ -53,8 +53,8 @@ nav a {
   border-radius: 5px;
 }
 
-nav a:hover, nav a.active {
-  background-color: #69a4e4; /* Light blue hover effect */
+nav a:hover, nav a:focus, nav a.active {
+  background-color: #69a4e4; /* Light blue for hover/active */
   font-weight: bold;
 }
 

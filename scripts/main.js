@@ -38,6 +38,14 @@ function displayCourses(filter = "all") {
     document.getElementById("totalCredits").textContent = totalCredits;
 }
 
+// Add active class on click
+document.querySelectorAll("nav a").forEach(link => {
+  link.addEventListener("click", () => {
+    document.querySelectorAll("nav a").forEach(nav => nav.classList.remove("active"));
+    link.classList.add("active");
+  });
+});
+
 // Display all courses on page load
 document.addEventListener("DOMContentLoaded", () => {
     displayCourses();
