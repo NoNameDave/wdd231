@@ -1,14 +1,4 @@
-@media (max-width: 600px) {
-  .header-content {
-      flex-direction: column;
-  }
-
-  nav {
-      flex-direction: column;
-      gap: 10px;
-  }
-}
-
+/* General Styles */
 body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
@@ -18,48 +8,147 @@ body {
 }
 
 header {
-  margin-bottom: 0; /* No gap between sections */
+  background-color: #002b5c;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative; /* Ensure positioning for nav-links */
 }
 
-.image {
-  background-color: #002b5c; /* Dark blue background for the image */
-  padding: 20px;
-  text-align: center;
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
 .profile-pic {
   border-radius: 50%;
-  width: 100px; /* Slightly larger image */
-  height: 100px;
-}
-
-.nav-bar {
-  background-color: #525050; /* Gray background for the navigation */
-  padding: 10px 0; /* Add spacing inside the nav bar */
-  text-align: center;
+  width: 80px;
+  height: 80px;
 }
 
 nav {
-  display: flex;
-  justify-content: center;
-  gap: 20px; /* Space between nav links */
+  display: none; /* Hidden by default for mobile */
 }
 
-nav a {
+.nav-links {
+  display: none; /* Hidden by default */
+  flex-direction: column;
+  background-color: #333;
+  position: absolute;
+  top: 100%; /* Directly below the header */
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  padding: 10px 0;
+}
+
+.nav-links.open {
+  display: flex; /* Show when toggled */
+}
+
+.nav-links a {
   color: white;
   text-decoration: none;
   padding: 10px 15px;
-  background-color: transparent; /* Transparent links for now */
+  background-color: #333;
+  border-radius: 5px;
+  margin: 5px 0;
+  text-align: center;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  background-color: #ffcc00;
+  font-weight: bold;
+  color: #000;
+}
+
+/* Desktop Navigation */
+@media (min-width: 769px) {
+  nav {
+    display: flex; /* Always visible for desktop */
+    justify-content: center;
+    gap: 15px;
+    position: static;
+  }
+
+  .nav-links {
+    display: flex; /* Horizontal layout for desktop */
+    flex-direction: row;
+    background-color: transparent; /* Transparent for desktop */
+    position: static;
+    padding: 0;
+  }
+
+  #menu-toggle {
+    display: none; /* Hide hamburger menu */
+  }
+}
+
+/* Hamburger Menu Button */
+#menu-toggle {
+  display: none;
+  background-color: #525050;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 18px;
+  cursor: pointer;
   border-radius: 5px;
 }
 
-nav a:hover, nav a:focus, nav a.active {
-  background-color: #69a4e4; /* Light blue for hover/active */
-  font-weight: bold;
+@media (max-width: 768px) {
+  #menu-toggle {
+    display: block; /* Show hamburger menu for mobile */
+    margin: 10px auto 0;
+  }
+
+  .nav-links {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 100%; /* Below the header */
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background-color: #333;
+    padding: 10px 0;
+  }
+
+  .nav-links.open {
+    display: flex; /* Show menu on toggle */
+  }
 }
 
-.image {
+/* Footer Styles */
+footer {
   background-color: #002b5c;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+/* Buttons */
+button {
+  margin: 5px;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #0056b3;
 }
 
 main {
@@ -80,6 +169,7 @@ section {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+/* Footer */
 footer {
   background-color: #002b5c;
   color: white;
@@ -93,6 +183,7 @@ footer p {
   margin: 5px 0;
 }
 
+/* Buttons */
 button {
   margin: 5px;
   padding: 10px 15px;
@@ -108,6 +199,7 @@ button:hover {
   background-color: #0056b3;
 }
 
+/* Course List Styles */
 #courseList div {
   padding: 10px;
   margin: 5px 0;
