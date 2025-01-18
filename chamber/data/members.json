@@ -4,7 +4,7 @@
         "address": "123 Sweet Lane, Timbuktu",
         "phone": "555-123-4567",
         "website": "https://www.abcbakery.com",
-        "image": "../../images/bakery.png",
+        "image": "../images/bakery.png",
         "membership_level": 3,
         "description": "A family-owned bakery specializing in artisan breads and pastries."
     },
@@ -13,7 +13,7 @@
         "address": "456 Silicon Blvd, Timbuktu",
         "phone": "555-987-6543",
         "website": "https://www.techinnovators.com",
-        "image": "../../images/tech.jpg",
+        "image": "../images/tech.jpg",
         "membership_level": 2,
         "description": "Leading the way in software solutions and IT consulting."
     },
@@ -22,7 +22,7 @@
         "address": "789 Fashion Ave, Timbuktu",
         "phone": "555-678-1234",
         "website": "https://www.elegantboutique.com",
-        "image": "../../images/boutique.jpg",
+        "image": "../images/boutique.jpg",
         "membership_level": 1,
         "description": "A chic clothing shop offering stylish apparel and accessories."
     },
@@ -31,7 +31,7 @@
         "address": "321 Culinary St, Timbuktu",
         "phone": "555-321-6789",
         "website": "https://www.timbuktueats.com",
-        "image": "../../images/restaurant.jpg",
+        "image": "../images/restaurant.jpg",
         "membership_level": 3,
         "description": "Serving delicious meals with local and international flavors."
     },
@@ -40,7 +40,7 @@
         "address": "654 Construction Way, Timbuktu",
         "phone": "555-654-9876",
         "website": "https://www.builditright.com",
-        "image": "../../images/construction.jpg",
+        "image": "../images/construction.jpg",
         "membership_level": 2,
         "description": "Experts in residential and commercial construction projects."
     },
@@ -49,7 +49,7 @@
         "address": "987 Legal Dr, Timbuktu",
         "phone": "555-789-4321",
         "website": "https://www.justicelawfirm.com",
-        "image": "../../images/law.jpg",
+        "image": "../images/law.jpg",
         "membership_level": 1,
         "description": "Providing professional legal services for individuals and businesses."
     },
@@ -58,7 +58,7 @@
         "address": "246 Fitness Rd, Timbuktu",
         "phone": "555-246-1357",
         "website": "https://www.fitlifegym.com",
-        "image": "../../images/gym.jpg",
+        "image": "../images/gym.jpg",
         "membership_level": 3,
         "description": "A state-of-the-art fitness center promoting a healthy lifestyle."
     }
