@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     document.getElementById("lastModified").textContent = document.lastModified;
 
     // Fetch member data
-    const response = await fetch("../chamber/data/members.json");
+    const response = await fetch("..chamber/data/members.json");
     const members = await response.json();
 
     // Membership Levels Mapping
