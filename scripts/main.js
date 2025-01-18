@@ -43,9 +43,5 @@ function displayCourses(filter = "all") {
   document.getElementById("totalCredits").textContent = totalCredits;
 }
 
-// Get elements
-const menuToggle = document.getElementById("menu-toggle");
-const navMenu = document.getElementById("nav-menu");
-
 // Load all courses by default
 displayCourses();

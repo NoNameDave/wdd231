@@ -1,0 +1,31 @@
+{
+    "weeks": [
+      {
+        "week": "Week 1",
+        "links": [
+          {
+            "url": "week01/activity1.html",
+            "title": "Activity 1 Title"
+          },
+          {
+            "url": "week01/activity2.html",
+            "title": "Activity 2 Title"
+          }
+        ]
+      },
+      {
+        "week": "Week 2",
+        "links": [
+          {
+            "url": "week02/activity1.html",
+            "title": "Activity 1 Title"
+          },
+          {
+            "url": "week02/activity2.html",
+            "title": "Activity 2 Title"
+          }
+        ]
+      }
+    ]
+  }
+  

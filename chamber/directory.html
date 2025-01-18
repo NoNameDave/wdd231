@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Christiaan Wolmarans">
+  <meta name="description" content="Directory of businesses for Timbuktu Chamber of Commerce">
+  <meta name="keywords" content="Timbuktu, Chamber of Commerce, Business Directory, Networking">
+
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="Timbuktu Chamber of Commerce - Business Directory">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://github.com/NoNameDave/wdd231/chamber/images/social-image.png">
+  <meta property="og:url" content="https://github.com/NoNameDave/wdd231/chamber/directory.html">
+  <meta property="og:description" content="Explore the business directory for Timbuktu Chamber of Commerce. Connect with local businesses and explore membership benefits.">
+
+  <!-- Twitter Card Metadata (Optional for broader compatibility) -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Timbuktu Chamber of Commerce - Business Directory">
+  <meta name="twitter:description" content="Explore the business directory for Timbuktu Chamber of Commerce. Connect with local businesses and explore membership benefits.">
+  <meta name="twitter:image" content="https://github.com/NoNameDave/wdd231/chamber/images/social-image.png">
+
+  <link rel="icon" href="https://github.com/NoNameDave/wdd231/chamber/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../styles/style.css">
+  <title>Timbuktu Chamber of Commerce Directory</title>
+</head>
+<body>
+    <header>
+      <div class="header-content">
+        <div class="container">
+          <h1>Timbuktu Chamber of Commerce</h1>
+          <button id="menu-toggle" aria-label="Toggle navigation">☰</button>
+          <nav id="nav-menu" class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html" class="active">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+          </nav>
+        </div>
+      </div>
+      </header>
+      <main>
+        <section class="directory-header">
+          <h2>Business Directory</h2>
+          <button id="toggleView">Toggle Grid/List View</button>
+        </section>
+        <section id="directory" class="grid-view">
+          <!-- Member cards will load here dynamically -->
+        </section>
+      </main>
+      <footer>
+        <p>© <span id="currentyear"></span> Timbuktu Chamber of Commerce. All rights reserved.</p>
+        <p id="lastModified"></p>
+      </footer>
+
+      <script src="../scripts/members.js" defer></script>
+</body>
+</html>
