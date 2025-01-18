@@ -253,3 +253,18 @@ button:hover {
   border: 1px solid #ccc;
   padding: 1rem;
 }
+
+button#toggleView {
+  margin: 5px;
+  padding: 10px 15px;
+  background-color: #0056b3; /* Darker blue for better contrast */
+  color: #ffffff; /* White text */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button#toggleView:hover {
+  background-color: #003f8a; /* Even darker blue on hover */
+}
