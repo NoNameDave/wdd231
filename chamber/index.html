@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Christiaan Wolmarans">
+  <meta name="description" content="Home page for Timbuktu Chamber of Commerce">
+  <meta name="keywords" content="Timbuktu, Chamber of Commerce, Business, Networking">
+
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="Timbuktu Chamber of Commerce">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/hero.jpg">
+  <meta property="og:url" content="index.html">
+  <meta property="og:description" content="Welcome to the Timbuktu Chamber of Commerce. Explore local businesses, events, and membership benefits.">
+
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>Timbuktu Chamber of Commerce</title>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div class="container">
+        <h1>Timbuktu Chamber of Commerce</h1>
+        <button id="menu-toggle" aria-label="Toggle navigation">☰</button>
+        <nav id="nav-menu" class="nav-links">
+          <a href="index.html" class="active">Home</a>
+          <a href="directory.html">Directory</a>
+          <a href="join.html">Join</a>
+          <a href="discover.html">Discover</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="images/hero.webp" alt="Hero Image" class="hero-image" height="400" width="800">
+      <h2>Welcome to Timbuktu Chamber of Commerce</h2>
+      <p>Your gateway to local business networking and community events.</p>
+      <a href="join.html" class="cta-button">Join Us Today</a>
+    </section>
+
+    <section class="current-events">
+      <h2>Current Events</h2>
+      <p>Stay updated with our upcoming events and community activities.</p>
+      <!-- Event details can be dynamically loaded here -->
+    </section>
+
+    <section class="weather">
+      <h2>Weather</h2>
+      <div id="weather-info">
+        <p>Loading current weather data...</p>
+      </div>
+    </section>
+
+    <section class="spotlights">
+      <h2>Spotlight</h2>
+      <div id="spotlight-cards" class="grid-view">
+        <!-- Spotlight company cards will be dynamically loaded here -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="currentyear"></span> Timbuktu Chamber of Commerce. All rights reserved.</p>
+    <p id="lastModified"></p>
+  </footer>
+
+  <script src="scripts/weather.js" defer></script>
+</body>
+</html>
