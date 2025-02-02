@@ -3,31 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="wdd230 - Web Frontend Development course assignment portal by Christiaan Wolmarans. This portal contains assignments and projects showcasing HTML, CSS, and JavaScript skills.">
+  <meta name="description" content="Join the Timbuktu Chamber of Commerce">
   <meta name="author" content="Christiaan Wolmarans">
-  <title>Christiaan Wolmarans - wdd230 - Web Frontend Development</title>
+  <title>Join the Chamber</title>
   <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="styles/join.css">
   <script src="../scripts/main.js" defer></script>
 </head>
-<div class="header-content">
-  <div class="image">
-    <img src="images/home.jpg" alt="Christiaan Wolmarans" class="profile-pic">
-  </div>
-  <button id="menu-toggle" aria-label="Toggle navigation">☰</button>
-  <nav id="nav-menu" class="nav-links">
-    <a href="../index.html">Home</a>
-    <a href="directory.html" class="active">Directory</a>
-    <a href="join.html">Join</a>
-    <a href="discover.html">Discover</a>
-  </nav>
-</div>
-</header>
-<main>
-
-</main>
-<footer>
-  <p>© <span id="currentyear"></span> Christiaan, South Africa</p>
-  <p id="lastModified"></p>
-</footer>    
+<body>
+  <header>
+    <div class="header-content">
+      <h1>Timbuktu Chamber of Commerce</h1>
+      <button id="menu-toggle" aria-label="Toggle navigation">☰</button>
+      <nav id="nav-menu" class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="directory.html">Directory</a>
+        <a href="join.html" class="active">Join</a>
+        <a href="discover.html">Discover</a>
+      </nav>
+    </div>
+  </header>
+  
+  <main>
+    <h2>Join the Chamber</h2>
+    <form action="thankyou.html" method="get">
+      <label>First Name: <input type="text" name="firstName" title="First Name" required autocomplete="given-name"></label>
+      <label>Last Name: <input type="text" name="lastName" title="Last Name" required autocomplete="family-name"></label>
+      <label>Organization Title: <input type="text" name="orgTitle" title="Organization Title" pattern="[A-Za-z\-\s]{7,}" autocomplete="organization-title"></label>
+      <label>Email: <input type="email" name="email" title="Email Address" required autocomplete="email" placeholder="example@domain.com"></label>
+      <label>Phone: <input type="tel" name="phone" title="Phone Number" required autocomplete="tel"></label>
+      <label>Organization Name: <input type="text" name="orgName" title="Organization Name" required autocomplete="organization"></label>
+      
+      <fieldset>
+        <legend>Membership Level</legend>
+        <label><input type="radio" name="membership" value="np"> NP Membership (Free)</label>
+        <label><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
+        <label><input type="radio" name="membership" value="silver"> Silver Membership</label>
+        <label><input type="radio" name="membership" value="gold"> Gold Membership</label>
+      </fieldset>
+      
+      <label>Business Description:
+        <textarea name="businessDesc" title="Business Description"></textarea>
+      </label>
+      
+      <input type="hidden" name="timestamp" id="timestamp">
+      <input type="submit" value="Submit">
+    </form>
+    
+    <section class="membership-cards">
+      <div class="card" id="np-card">
+        <h3>NP Membership</h3>
+        <button onclick="openModal('np')">Learn More</button>
+      </div>
+      <div class="card" id="bronze-card">
+        <h3>Bronze Membership</h3>
+        <button onclick="openModal('bronze')">Learn More</button>
+      </div>
+      <div class="card" id="silver-card">
+        <h3>Silver Membership</h3>
+        <button onclick="openModal('silver')">Learn More</button>
+      </div>
+      <div class="card" id="gold-card">
+        <h3>Gold Membership</h3>
+        <button onclick="openModal('gold')">Learn More</button>
+      </div>
+    </section>
+    
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <p id="modal-text"></p>
+      </div>
+    </div>
+  </main>
+  
+  <footer>
+    <p>© <span id="currentyear"></span> Timbuktu Chamber of Commerce. All rights reserved.</p>
+    <p id="lastModified"></p>
+  </footer>
+  
+  <script src="scripts/join.js" defer></script>
 </body>
 </html>
