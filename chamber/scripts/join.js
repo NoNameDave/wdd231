@@ -2,8 +2,8 @@ document.addEventListener("DOMContentLoaded", () => {
     // Fill timestamp field with the current date and time
     document.getElementById("timestamp").value = new Date().toISOString();
 
-    // Membership card animation on load
-    const membershipCards = document.querySelectorAll(".membership-card");
+    // Fade-in animation for membership cards
+    const membershipCards = document.querySelectorAll(".card");
     membershipCards.forEach((card, index) => {
         setTimeout(() => {
             card.classList.add("visible");

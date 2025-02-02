@@ -3,12 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Join the Timbuktu Chamber of Commerce">
+  <meta name="description" content="Become a member of the Timbuktu Chamber of Commerce. Choose from NP, Bronze, Silver, or Gold Memberships and enjoy networking, events, and more.">
   <meta name="author" content="Christiaan Wolmarans">
-  <title>Join the Timbuktu Chamber of Commerce</title>
+  <meta property="og:title" content="Join the Timbuktu Chamber of Commerce">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nonamedave.github.io/wdd231/chamber/join.html">
+  <meta property="og:description" content="Become a member of the Timbuktu Chamber of Commerce. Choose from NP, Bronze, Silver, or Gold Memberships and enjoy networking, events, and more.">
+  <link rel="icon" href="images/favicon.jpg" type="image/x-icon">
+  <title>Join the Timbuktu Chamber of Commerce | Membership Registration</title>
   <link rel="stylesheet" href="../styles/style.css">
   <link rel="stylesheet" href="styles/join.css">
-  <script src="../scripts/main.js" defer></script>
 </head>
 <body>
   <header>
@@ -36,10 +40,26 @@
       
       <fieldset>
         <legend>Membership Level</legend>
-        <label><input type="radio" name="membership" value="np"> NP Membership (Free)</label>
-        <label><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
-        <label><input type="radio" name="membership" value="silver"> Silver Membership</label>
-        <label><input type="radio" name="membership" value="gold"> Gold Membership</label>
+    
+        <label id="np-label">
+            NP Membership (Free) 
+            <input type="radio" name="membership" value="np">
+        </label>
+    
+        <label id="bronze-label">
+            Bronze Membership
+            <input type="radio" name="membership" value="bronze">
+        </label>
+    
+        <label id="silver-label">
+            Silver Membership
+            <input type="radio" name="membership" value="silver">
+        </label>
+    
+        <label id="gold-label">
+            Gold Membership
+            <input type="radio" name="membership" value="gold">
+        </label>
       </fieldset>
       
       <label>Business Description:

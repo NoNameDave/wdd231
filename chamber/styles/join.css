@@ -126,3 +126,80 @@ button:hover {
 .close-modal:hover {
     background: darkred;
 }
+
+.membership-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.card {
+    width: 250px;
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transform: scale(0.8);
+    opacity: 0;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.card.visible {
+    transform: scale(1);
+    opacity: 1;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 15px;
+}
+
+fieldset legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+    grid-column: span 2; /* Makes the legend span both columns */
+}
+
+fieldset label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+}
+
+fieldset input[type="radio"] {
+    flex-shrink: 0;
+    margin-left: 10px;
+}
+
+/* Membership Colors */
+#np-label {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+#bronze-label {
+    background-color: #CD7F32; /* Bronze */
+    color: white;
+}
+
+#silver-label {
+    background-color: #C0C0C0; /* Silver */
+    color: black;
+}
+
+#gold-label {
+    background-color: #FFD700; /* Gold */
+    color: black;
+}
