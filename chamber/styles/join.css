@@ -152,6 +152,21 @@ button:hover {
     opacity: 1;
 }
 
+.card button {
+    margin-top: 10px;
+    background-color: #0056b3; /* Darker blue for better contrast */
+    color: white; /* Ensures text remains readable */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.card button:hover {
+    background-color: #003c80; /* Even darker blue on hover */
+}
+
 fieldset {
     border: 1px solid #ccc;
     padding: 15px;
@@ -181,25 +196,4 @@ fieldset label {
 fieldset input[type="radio"] {
     flex-shrink: 0;
     margin-left: 10px;
-}
-
-/* Membership Colors */
-#np-label {
-    background-color: #4CAF50; /* Green */
-    color: white;
-}
-
-#bronze-label {
-    background-color: #CD7F32; /* Bronze */
-    color: white;
-}
-
-#silver-label {
-    background-color: #C0C0C0; /* Silver */
-    color: black;
-}
-
-#gold-label {
-    background-color: #FFD700; /* Gold */
-    color: black;
 }
