@@ -85,7 +85,7 @@ body {
   }
   
   #menu-toggle {
-    display: block;
+    display: none;
     background-color: #525050;
     color: white;
     border: none;
