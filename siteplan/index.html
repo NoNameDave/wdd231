@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A responsive and accessible online store for handmade greeting cards.">
+    <meta name="author" content="Your Name">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/script.js" defer></script>
+    <title>Crafty Greetings - Handmade Greeting Cards</title>
+</head>
+<body>
+    <header>
+      <div class="header-content">
+        <div class="image">
+          <img src="../images/home.jpg" alt="Crafty Greetings Logo" class="logo">
+        </div>
+        <nav id="nav-menu" class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="shop.html">Shop</a>
+          <a href="custom-orders.html">Custom Orders</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+      <main>
+        <h1>Welcome to Crafty Greetings</h1>
+        <section>
+            <h2>About Us</h2>
+            <p>Crafty Greetings offers unique, hand-drawn cartoon-style greeting cards for every occasion.</p>
+        </section>
+        <section>
+          <h2>Featured Products</h2>
+          <div>
+            <button onclick="displayProducts('all')">All Cards</button>
+            <button onclick="displayProducts('birthday')">Birthday</button>
+            <button onclick="displayProducts('holiday')">Holiday</button>
+          </div>
+          <div id="productList">
+            <!-- JavaScript will dynamically populate products here -->
+          </div>
+        </section>
+        <section>
+            <h2>Customer Questions</h2>
+            <ul>
+                <li>Can I request a custom-designed greeting card?</li>
+                <li>What materials do you use for your handmade cards?</li>
+            </ul>
+        </section>
+      </main>
+      <footer>
+        <p>© <span id="currentyear"></span> Crafty Greetings</p>
+        <p id="lastModified"></p>
+      </footer>    
+</body>
+</html>
