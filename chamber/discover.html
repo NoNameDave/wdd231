@@ -4,15 +4,27 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Discover Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Christiaan Wolmarans">
+<meta name="description" content="Discover Timbuktu Chamber of Commerce">
+<meta name="keywords" content="Timbuktu, Chamber of Commerce, Discovery">
+
+<!-- Open Graph Metadata -->
+<meta property="og:title" content="Timbuktu Chamber of Commerce - Business Directory">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://github.com/NoNameDave/wdd231/images/home.jpg">
+<meta property="og:url" content="https://github.com/NoNameDave/wdd231/chamber/discover.html">
+<meta property="og:description" content="Explore the business directory for Timbuktu Chamber of Commerce. Connect with local businesses and explore membership benefits.">
+
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<title>Discover Timbuktu Chamber of Commerce</title>
 <link rel="stylesheet" href="../styles/style.css">
-<script src="../scripts/main.js" defer></script>
+<link rel="stylesheet" href="styles/discover.css">
+<script src="scripts/discover.js" defer></script>
 </head>
 <body>
+  <header>
     <div class="header-content">
-        <div class="image">
-          <img src="images/home.jpg" alt="Christiaan Wolmarans" class="profile-pic">
-        </div>
         <button id="menu-toggle" aria-label="Toggle navigation">☰</button>
         <nav id="nav-menu" class="nav-links">
             <a href="../index.html">Home</a>
@@ -23,7 +35,65 @@
       </div>
     </header>
       <main>
-        
+        <div id="visitMessage"></div>
+        <section class="discover-grid">
+          <div class="card">
+            <img data-src="images/table_mountain.jpg" alt="Table Mountain">
+            <h2>Table Mountain</h2>
+            <address>Cape Town, Western Cape</address>
+            <p>One of the most iconic landmarks in South Africa, offering breathtaking views of Cape Town.</p>
+            <button>Learn More</button>
+          </div>
+          <div class="card">
+            <img data-src="images/kruger_park.jpg" alt="Kruger National Park">
+            <h2>Kruger National Park</h2>
+            <address>Limpopo & Mpumalanga</address>
+            <p>One of Africa's largest game reserves, home to the Big Five and diverse wildlife.</p>
+            <button>Learn More</button>
+          </div>
+          <div class="card">
+            <img data-src="images/blyde_river.jpg" alt="Blyde River Canyon">
+            <h2>Blyde River Canyon</h2>
+            <address>Mpumalanga</address>
+            <p>A stunning natural canyon with breathtaking panoramic views and lush landscapes.</p>
+            <button>Learn More</button>
+          </div>
+          <div class="card">
+            <img data-src="images/robbens_island.jpg" alt="Robben Island">
+            <h2>Robben Island</h2>
+            <address>Off the coast of Cape Town</address>
+            <p>Historic island where Nelson Mandela was imprisoned, now a UNESCO World Heritage Site.</p>
+            <button>Learn More</button>
+          </div>
+          <div class="card">
+            <img data-src="images/drakensberg.jpg" alt="Drakensberg Mountains">
+            <h2>Drakensberg Mountains</h2>
+            <address>KwaZulu-Natal</address>
+            <p>A stunning mountain range offering hiking, waterfalls, and ancient rock art.</p>
+            <button>Learn More</button>
+          </div>
+          <div class="card">
+            <img data-src="images/garden_route.jpg" alt="Garden Route">
+            <h2>Garden Route</h2>
+            <address>Western & Eastern Cape</address>
+            <p>A scenic coastal drive with picturesque towns, forests, and beaches.</p>
+            <button>Learn More</button>
+          </div>
+          <div class="card">
+            <img data-src="images/valley_of_desolation.jpg" alt="Valley of Desolation">
+            <h2>Valley of Desolation</h2>
+            <address>Eastern Cape</address>
+            <p>A striking geological formation in the Karoo, offering stunning sunset views.</p>
+            <button>Learn More</button>
+          </div>
+          <div class="card">
+            <img data-src="images/shakaland.jpg" alt="Shakaland">
+            <h2>Shakaland</h2>
+            <address>KwaZulu-Natal</address>
+            <p>A cultural village showcasing the traditions and history of the Zulu people.</p>
+            <button>Learn More</button>
+          </div>
+        </section>
       </main>
       <footer>
         <p>© <span id="currentyear"></span> Christiaan, South Africa</p>

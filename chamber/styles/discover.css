@@ -1,0 +1,137 @@
+/* Discover Page Specific Styles */
+
+/* Grid Layout for Small Screens (Mobile) */
+.discover-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  /* Grid Layout for Medium Screens */
+  @media (min-width: 641px) {
+    .discover-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* Grid Layout for Large Screens */
+  @media (min-width: 1025px) {
+    .discover-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  /* Card Styles */
+  .card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .card h2 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  .card address {
+    font-style: normal;
+    color: gray;
+  }
+  
+  .card p {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .card button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .card button:hover {
+    background: #0056b3;
+  }
+
+  #visitMessage {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    font-size: larger;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+/* Desktop Navigation */
+@media (min-width: 769px) {
+    nav {
+      display: flex; /* Always visible for desktop */
+      justify-content: center;
+      gap: 15px;
+      position: static;
+    }
+  
+    .nav-links {
+      display: flex; /* Horizontal layout for desktop */
+      flex-direction: row;
+      background-color: transparent; /* Transparent for desktop */
+      position: static;
+      padding: 0;
+    }
+  
+    #menu-toggle {
+      display: none; /* Hide hamburger menu */
+    }
+  }
+  
+  /* Hamburger Menu Button */
+  #menu-toggle {
+    display: none;
+    background-color: #525050;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    #menu-toggle {
+      display: block; /* Show hamburger menu for mobile */
+      margin: 10px auto 0;
+    }
+  
+    .nav-links {
+      display: none; /* Hidden by default */
+      position: absolute;
+      top: 100%; /* Below the header */
+      left: 0;
+      width: 100%;
+      flex-direction: column;
+      background-color: #333;
+      padding: 10px 0;
+    }
+  
+    .nav-links.open {
+      display: flex; /* Show menu on toggle */
+    }
+  }
