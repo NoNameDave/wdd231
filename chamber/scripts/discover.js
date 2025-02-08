@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
     localStorage.setItem("lastVisit", now);
     
     // Fetch JSON Data for Cards
-    fetch("places.json")
+    fetch("../chamber/places.json")
         .then(response => response.json())
         .then(data => {
             const discoverGrid = document.querySelector(".discover-grid");
