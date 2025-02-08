@@ -1,0 +1,52 @@
+{
+    "places": [
+      {
+        "title": "Table Mountain",
+        "image": "images/table_mountain.jpg",
+        "address": "Cape Town, Western Cape",
+        "description": "One of the most iconic landmarks in South Africa, offering breathtaking views of Cape Town."
+      },
+      {
+        "title": "Kruger National Park",
+        "image": "images/kruger_park.jpg",
+        "address": "Limpopo & Mpumalanga",
+        "description": "One of Africa's largest game reserves, home to the Big Five and diverse wildlife."
+      },
+      {
+        "title": "Blyde River Canyon",
+        "image": "images/blyde_river.jpg",
+        "address": "Mpumalanga",
+        "description": "A stunning natural canyon with breathtaking panoramic views and lush landscapes."
+      },
+      {
+        "title": "Robben Island",
+        "image": "images/robbens_island.jpg",
+        "address": "Off the coast of Cape Town",
+        "description": "Historic island where Nelson Mandela was imprisoned, now a UNESCO World Heritage Site."
+      },
+      {
+        "title": "Drakensberg Mountains",
+        "image": "images/drakensberg.jpg",
+        "address": "KwaZulu-Natal",
+        "description": "A stunning mountain range offering hiking, waterfalls, and ancient rock art."
+      },
+      {
+        "title": "Garden Route",
+        "image": "images/garden_route.jpg",
+        "address": "Western & Eastern Cape",
+        "description": "A scenic coastal drive with picturesque towns, forests, and beaches."
+      },
+      {
+        "title": "Valley of Desolation",
+        "image": "images/valley_of_desolation.jpg",
+        "address": "Eastern Cape",
+        "description": "A striking geological formation in the Karoo, offering stunning sunset views."
+      },
+      {
+        "title": "Shakaland",
+        "image": "images/shakaland.jpg",
+        "address": "KwaZulu-Natal",
+        "description": "A cultural village showcasing the traditions and history of the Zulu people."
+      }
+    ]
+  }  

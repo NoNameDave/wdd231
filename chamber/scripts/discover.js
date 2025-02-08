@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-
     const menuToggle = document.getElementById("menu-toggle");
     const navMenu = document.getElementById("nav-menu");
     
@@ -22,13 +21,36 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
         const daysBetween = Math.floor((now - lastVisit) / (1000 * 60 * 60 * 24));
         if (daysBetween < 1) {
-            visitMessage.textContent = "Welcome back to our website!";
+            visitMessage.textContent = "Back so soon! Awesome!";
         } else {
             visitMessage.textContent = `You last visited ${daysBetween} day${daysBetween > 1 ? 's' : ''} ago.`;
         }
     }
     
     localStorage.setItem("lastVisit", now);
+    
+    // Fetch JSON Data for Cards
+    fetch("places.json")
+        .then(response => response.json())
+        .then(data => {
+            const discoverGrid = document.querySelector(".discover-grid");
+            
+            data.places.forEach(place => {
+                const card = document.createElement("div");
+                card.classList.add("card");
+                
+                card.innerHTML = `
+                    <img src="${place.image}" alt="${place.title}">
+                    <h2>${place.title}</h2>
+                    <address>${place.address}</address>
+                    <p>${place.description}</p>
+                    <button>Learn More</button>
+                `;
+                
+                discoverGrid.appendChild(card);
+            });
+        })
+        .catch(error => console.error("Error loading places.json:", error));
     
     // Lazy loading images
     const images = document.querySelectorAll("img[data-src]");
