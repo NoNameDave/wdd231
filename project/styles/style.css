@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+header {
+    background-color: #0056b3; /* Darker shade of blue for better contrast */
+    color: #ffffff; /* Ensuring good contrast */
+    text-align: center;
+    padding: 1rem;
+}
+
+nav ul li a {
+    color: #ffffff; /* White text for contrast */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    color: #ffd700; /* Gold for a clear hover effect */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label, form input {
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #004085; /* Darker blue */
+    color: #ffffff; /* White text for high contrast */
+    font-weight: bold;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover, button:focus {
+    background-color: #002752; /* Even darker blue for hover */
+    color: #ffffff; /* Keep high contrast */
+}
+
+footer {
+    background-color: #0056b3; /* Darker blue */
+    color: #ffffff; /* White for better contrast */
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    color: #ffffff; /* Ensure all text has high contrast */
+    font-size: 14px;
+}
